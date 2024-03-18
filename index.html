@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Pizza Preference Survey │ The Pizza Slice </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://cdn-icons-png.flaticon.com/512/6978/6978255.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+<!-- This is the title section containing the logo as well as the title -->
+  <div class="header">
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/128/2454/2454220.png" alt="logo" />
+    <h1 id="title"> The Pizza Slice </h1>
+  </div>
+  <p id="description">
+    &#127829; Help us Craft The Perfect Pizza Experience!
+  </p>
+  <div class="form">
+    <form action="" target="_blank" method="get" autocomplete="on" id="survey-form">
+      <!-- Form to fill personal details -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name" id="name-label">
+          01. Enter your name:
+          <input id="name" type="text" autofocus placeholder="Salma" required />
+        </label>
+        <label for="email" id="email-label">
+          02. Enter your email:
+          <input id="email" type="email" placeholder="salma@gmail.com" required />
+        </label>
+        <label for="number" id="number-label">
+          03. Enter your age:
+          <input id="number" type="number" min="13" placeholder="19" max="50" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <!-- Form to fill pizza preferences -->
+        <legend>Pizza Preferences</legend>
+        <p>01. What is your favourite type of crust?</p>
+        <label for="pan">
+          <input type="radio" id="pan" value="Pan" name="crust" /> Pan
+        </label>
+        <label for="thin">
+          <input type="radio" id="thin" value="Thin" name="crust" /> Thin
+        </label>
+        <label for="stuffed">
+          <input type="radio" id="stuffed" value="Stuffed" name="crust" />
+          Stuffed
+        </label>
+        <p>02. Which Pizza toppings do you enjoy? (Select all that apply)</p>
+        <label for="pepperoni">
+          <input type="checkbox" id="pepperoni" value="Pepperoni" /> Pepperoni
+        </label>
+        <label for="jalapeno">
+          <input type="checkbox" id="jalapeno" value="Jalapeno" /> Jalapeno
+        </label>
+        <label for="blackOlives">
+          <input type="checkbox" id="blackOlives" value="Black Olives" />
+          Black Olives
+        </label>
+        <label for="chicken">
+          <input type="checkbox" id="chicken" value="Chicken" /> Chicken
+        </label>
+        <label for="beef">
+          <input type="checkbox" id="beef" value="Beef" /> Beef
+        </label>
+        <br />
+        <br />
+        <label class="sauce" for="sauce">
+          03. What is your favourite type of sauce?
+        </label>
+        <br />
+        <br />
+        <select id="dropdown" name="sauce">
+          <option hidden>Select Sauce</option>
+          <option value="bbq">BBQ</option>
+          <option value="ranch">Ranch</option>
+          <option value="dynamite">Dynamite</option>
+          <option value="tomato">Tomato</option>
+        </select>
+        <p>
+          04. Do you have any special dietary restrictions or preferences we
+          should consider when designing our menu? Please let us know.
+        </p>
+        <textarea name="additionalComments">
+Ex: I have a gluten intolerance, so I prefer gluten-free crust options. 
+Additionally, I avoid dairy products, so dairy-free cheese would be appreciated. </textarea>
+      </fieldset>
+    <!-- Buttons to submit or clear form data -->
+      <input type="reset" id="reset" value="Clear" />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </div>
+</body>
+
+</html>
+
+<!-- Attribution: <a href="https://www.flaticon.com/free-icons/pizza" title="pizza icons">Pizza icons created by Freepik - Flaticon</a> -->

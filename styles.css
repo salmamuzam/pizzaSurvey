@@ -1,0 +1,163 @@
+/* Importing poppins font from Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  background-color: #893f45;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.header {
+  margin: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 40px;
+}
+
+#title {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-top: 50px;
+  margin-left: -400px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+input, textarea{
+  border: none;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: white;
+  color: #893f45;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  padding: 20px;
+}
+
+.form {
+  margin: 40px;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 131, 97, 1) 11.2%,
+    rgba(28, 103, 88, 1) 91.1%
+  );
+  padding: 20px;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+fieldset {
+  display: flex;
+  border-radius: 1.5rem;
+  border: 3px solid white;
+  margin: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #f5f5dc;
+  border: 3px solid #893f45;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+label,
+p {
+  font-size: 20px;
+}
+
+#name,
+#email,
+#number {
+  width: 98%;
+  padding: 15px;
+  margin: 10px 0px;
+  font-size: 15px;
+  border-radius: 1.5rem;
+}
+
+.sauce {
+  margin-top: -20px;
+}
+
+#dropdown {
+  margin-top: -30px;
+  border-radius: 1.5rem;
+  padding: 15px;
+  font-size: 15px;
+}
+
+textarea {
+  padding: 20px;
+  border-radius: 1.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 20px;
+  background-color: #f3e5ab;
+  font-weight: bold;
+  border: 1px solid #893f45;
+  font-size: 18px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1.5rem;
+  width: 100%;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #ffffe0;
+  font-weight: bolder;
+}
+
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 40%;
+    margin-left: 120px;
+  }
+  h1 {
+    text-align: center;
+    margin-right: -400px;
+  }
+
+  #name,
+  #email,
+  #number {
+    width: 90%;
+  }
+  textarea {
+    width: 300px;
+    height: 200px;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    margin-left: 40px;
+    width: 350px;
+  }
+}
